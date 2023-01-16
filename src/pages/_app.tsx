@@ -5,6 +5,7 @@ import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
   breakpoints: {
+    // workaround for the chakra-ui bug Ref: https://github.com/chakra-ui/chakra-ui/issues/5555
     desktop: "84.375em",
   },
   colors: {
@@ -39,7 +40,6 @@ const theme = extendTheme({
           textColor: "white",
           py: "2px",
           px: "19px",
-          
         },
         bagsDesktop: {
           bg: "blueBrand.500",
